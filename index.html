@@ -1,0 +1,1087 @@
+<!-- 
+
+  1. 개발자모드 잘활용
+  2. 남의 구조 습득, 클레스명 습득
+
+  img - 이미지
+  bg - 로고,아이콘,배경
+
+  a - 링크, 액션
+  btn - 데이터연관
+
+  div, span, i - 의미없는 태그(아이콘, 선)
+  strong, em - 의미있는 태그
+
+  유의미 - p (단독)
+  무의미 - span, div (단독)
+
+  dpi
+  1ch - 10(pc) 50px*50px 잘나옴
+  1ch - 100 (m) 50px*50px 흐릿하게
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAVER</title>
+  <link rel="stylesheet" href="./asset/css/layout.css">
+  <link rel="stylesheet" href="./asset/css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="group-flex">
+        <h1 class="logo-area">
+          <a href="">
+            <span class="blind">네이버</span>
+          </a>
+        </h1>
+        <div class="search-area">
+          <form action="" method="get">
+            <fieldset>
+              <legend class="blind">검색</legend>
+              <div class="inner">
+                <input type="text" class="input-text">
+                <button class="btn-submit"><span class="blind">검색</span></button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="service-area">
+          <a href="" class="link-start">네이버를 시작페이지로</a><i class="bar"></i>
+          <a href="" class="link-junior"><span class="blind">쥬니언네이버</span></a>
+          <a href="" class="link-bin"><span class="blind">해피빈</span></a>
+        </div>
+      </div>
+
+      <nav class="gnb">
+        <div class="group-gnb">
+          <div class="gnb-area">
+            <ul class="gnb-list type-fix">
+              <li class="gnb-item"><a href="" class="link-nav">메일</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">카페</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">블로그</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">지식IN</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">쇼핑</a></li>
+              <li class="gnb-item"><a href="" class="link-nav shoplive"><span class="blind">쇼핑라이브</span></a></li>
+              <li class="gnb-item"><a href="" class="link-nav">Pay</a></li>
+              <li class="gnb-item"><a href="" class="link-nav"><i class="ico-tv"></i>TV</a></li>
+            </ul>
+            <ul class="gnb-list">
+              <li class="gnb-item"><a href="" class="link-nav">사전</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">뉴스</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">증권</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">부동산</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">지도</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">VIBE</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">도서</a></li>
+              <li class="gnb-item"><a href="" class="link-nav">웹툰</a></li>
+            </ul>
+            <a href="" class="btn-more" role="button">더보기</a>
+          </div>
+          <div class="weather-area">
+            <a href="">
+              <div class="current-box">
+                <strong class="current" aria-label="현재기온">17.7°</strong>
+                <strong class="state" aria-label="현재기온">맑음</strong>
+              </div>
+              <div class="degree-box">
+                <span class="min" aria-label="최저">11.0°</span>
+                <span class="max" aria-label="최고">21.0°</span>
+              </div>
+              <span class="location">목동</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="column-left">
+        <aside class="ad-box">
+          <a href="" class="thumb-bd">
+            <img src="./asset/images/ad1.jpg" alt="">
+          </a>
+        </aside>
+
+        <section class="sc-news">
+          <h2 class="blind">뉴스스탠드</h2>
+          <div class="group-issue">
+            <div class="issue-area">
+              <a href="" class="link-media">연합뉴스</a>
+              <a href="" class="link-issue">이종석 최대 5000원 할인</a>
+            </div>
+            <div class="direct-aera">
+              <a href="" class="link-home">뉴스홈</a>
+              <a href="" class="link-direct">연예</a>
+              <a href="" class="link-direct">스포츠</a>
+              <a href="" class="link-direct">경제</a>
+            </div>
+          </div>
+          <div class="group-title">
+            <a href="" class="link-newstand">뉴스스탠드</a>
+
+            <div class="sort-area" role="tablist">
+              <a href="" role="tab" aria-selected="false">구독한언론사</a>
+              <a href="" role="tab" aria-selected="true">전체언론사</a>
+            </div>
+
+            <div class="set-area" role="tablist">
+              <a href="" class="btn-set ic-list" role="tab" aria-selected="true"><span class="blind">리스트형</span></a>
+              <a href="" class="btn-set ic-tile" role="tab" aria-selected="false"><span class="blind">갤러리형</span></a>
+              <a href="" class="btn-set ic-set" aria-selected="false"><span class="blind">뉴스설정</span></a>
+            </div>
+          </div>
+          <div class="group-media">
+            <ul class="media-list">
+              <li class="media-item">
+                <a href="">
+                  <img src="./asset/images/news.png" alt="석간문화일보">
+                </a>
+              </li>
+              <li class="media-item">
+                <a href="">
+                  <img src="./asset/images/news.png" alt="석간문화일보">
+                </a>
+              </li>
+              <li class="media-item">
+                <a href="">
+                  <img src="./asset/images/news.png" alt="석간문화일보">
+                </a>
+              </li>
+            </ul>
+            <i class="vt-line vt1"></i> <i class="vt-line vt2"></i> <i class="vt-line vt3"></i> <i
+              class="vt-line vt4"></i> <i class="vt-line vt5"></i>
+            <i class="hr-line hr1"></i><i class="hr-line hr2"></i><i class="hr-line hr3"></i>
+          </div>
+        </section>
+
+        <!-- 레시피 부분 만드세요! -->
+        <section class="sc-themepost">
+          <h2 class="blind">주제별포스팅</h2>
+          <div class="theme-head">
+            <div class="group-title">
+              <div class="title-area">
+                <strong class="title">오늘 읽을만한 글</strong>
+                <span class="desc">주제별로 분류된 다양한 글 모음</span>
+              </div>
+              <div class="info-area">
+                <span class="info"><strong class="new">671</strong> 개의 글</span>
+                <a href="" class="btn-set" role="button">관심주제 설정</a>
+              </div>
+            </div>
+            <div class="group-category">
+              <div class="category-wrap">
+                <a role="button" class="btn-nav prev"><span class="blind">이전</span></a>
+                <a role="button" class="btn-nav next"><span class="blind">다음</span></a>
+                <ul class="category-list" role="tablist">
+                  <li class="category-item"><a href="" role="tab" aria-selected="false">엔터</a></li>
+                  <li class="category-item"><a href="" role="tab" aria-selected="false">스포츠</a></li>
+                  <li class="category-item"><a href="" role="tab" aria-selected="false">자동차</a></li>
+                  <li class="category-item"><a href="" role="tab" aria-selected="false">웹툰</a></li>
+                  <li class="category-item"><a href="" role="tab" aria-selected="false">경제</a></li>
+                  <li class="category-item"><a href="" role="tab" aria-selected="false">추천<span
+                        class="ico-middot"></span>구독</a></li>
+                  <li class="category-item"><a href="" role="tab" aria-selected="true">레시피</a></li>
+                  <li class="category-item"><a href="" role="tab" aria-selected="false">리빙</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="theme-content">
+            <div class="group-topstory">
+              <div class="topstory-inner">
+                <a href="" class="topstory-thumb thumb-bd">
+                  <img src="./asset/images/ad3.jpg" alt="">
+                  <i class="play"><span class="blind">재생</span></i>
+                  <span class="time">
+                    <em>5:33</em>
+                    <span class="blind">재생시간</span>
+                  </span>
+                </a>
+                <a href="" class="topstory-info">
+                  <em class="theme-category">[푸드클래스] 꽁블 요리연구가</em>
+                  <strong class="title">동남아 분위기를 담은 한 그릇, 쌀국수 볶음</strong>
+                  <p class="desc">
+                    우리 입맛에도 딱 맞는 별미 메뉴 <br>
+                    은근 쉽게 만들 수 있으니 꼭 만들어 보세요
+                  </p>
+                  <div class="source-box">
+                    <span class="source">
+                      <span class="source-inner">#해산물쌀국수 #말레이시아</span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="topstory-inner">
+                <a href="" class="topstory-thumb thumb-bd">
+                  <img src="./asset/images/ad3.jpg" alt="">
+                  <i class="play"><span class="blind">재생</span></i>
+                  <span class="time">
+                    <em>5:33</em>
+                    <span class="blind">재생시간</span>
+                  </span>
+                </a>
+                <a href="" class="topstory-info">
+                  <em class="theme-category">[푸드클래스] 꽁블 요리연구가</em>
+                  <strong class="title">동남아 분위기를 담은 한 그릇, 쌀국수 볶음</strong>
+                  <p class="desc">
+                    우리 입맛에도 딱 맞는 별미 메뉴 <br>
+                    은근 쉽게 만들 수 있으니 꼭 만들어 보세요
+                  </p>
+                  <div class="source-box">
+                    <span class="source">
+                      <span class="source-inner">#해산물쌀국수 #말레이시아</span>
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="group-theme">
+              <ul class="theme-list">
+                <div class="theme-item theme-item-ad">
+                  <a href="" class="theme-thumb thumb-bd">
+                    <img src="./asset/images/ad4.jpg" alt="">
+                  </a>
+                  <a href="" class="theme-info">
+                    <div class="ad-compay">
+                      <em>별미담</em>
+                      <button class="ad-mark"><span class="blind">AD, 광고닫기</span></button>
+                    </div>
+                    <strong class="title">별미담 수제 손찹쌀 약과 드디어 출시</strong>
+                    <p class="desc">
+                      오래 기다린만큼 더 맛있게 돌아왔다 일단 들어와<br>
+                      이전보다 더 맛있고 건강한 수제 손찹쌀 약과
+                    </p>
+                    <span clss="landing">지금 구매하기</span>
+                  </a>
+                </div>
+                <li class="theme-item">
+                  <a href="" class="theme-thumb thumb-bd">
+                    <img src="./asset/images/ad5.jpg" alt="">
+                  </a>
+                  <a href="" class="theme-info">
+                    <em class="theme-category">레시피</em>
+                    <strong class="title">고구마전 간단하고 바삭하게 부치는 법</strong>
+                    <p class="desc">오늘의 메뉴 고구마전 명절에 전하면 빠질 수 없는 메뉴가 하나 있죠 바로 고구마전인데요 사실 에그얌이 가장 좋아하는 전이 고구마전이라 명절 음식을
+                      준비할 때 빼놓을 수 없답니다 고구마는 식이 섬유소가 풍부해 영양 간식으로 먹기에도 손색이 없는데요 단단한 밤고구마와 튀김가루를 이용해 바삭한 고구마전을 만들어봤어요 고구마는
+                      밥과의 궁합도 정말 좋은데요 고구마.</p>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">에그얌</span>
+                      </span>
+                      <span class="date">4주일 전</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="" class="theme-thumb thumb-bd">
+                    <img src="./asset/images/ad5.jpg" alt="">
+                  </a>
+                  <a href="" class="theme-info">
+                    <em class="theme-category">레시피</em>
+                    <strong class="title">고구마전 간단하고 바삭하게 부치는 법</strong>
+                    <p class="desc">오늘의 메뉴 고구마전 명절에 전하면 빠질 수 없는 메뉴가 하나 있죠 바로 고구마전인데요 사실 에그얌이 가장 좋아하는 전이 고구마전이라 명절 음식을
+                      준비할 때 빼놓을 수 없답니다 고구마는 식이 섬유소가 풍부해 영양 간식으로 먹기에도 손색이 없는데요 단단한 밤고구마와 튀김가루를 이용해 바삭한 고구마전을 만들어봤어요 고구마는
+                      밥과의 궁합도 정말 좋은데요 고구마.</p>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">에그얌</span>
+                      </span>
+                      <span class="date">4주일 전</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="" class="theme-thumb thumb-bd">
+                    <img src="./asset/images/ad5.jpg" alt="">
+                  </a>
+                  <a href="" class="theme-info">
+                    <em class="theme-category">레시피</em>
+                    <strong class="title">고구마전 간단하고 바삭하게 부치는 법</strong>
+                    <p class="desc">오늘의 메뉴 고구마전 명절에 전하면 빠질 수 없는 메뉴가 하나 있죠 바로 고구마전인데요 사실 에그얌이 가장 좋아하는 전이 고구마전이라 명절 음식을
+                      준비할 때 빼놓을 수 없답니다 고구마는 식이 섬유소가 풍부해 영양 간식으로 먹기에도 손색이 없는데요 단단한 밤고구마와 튀김가루를 이용해 바삭한 고구마전을 만들어봤어요 고구마는
+                      밥과의 궁합도 정말 좋은데요 고구마.</p>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">에그얌</span>
+                      </span>
+                      <span class="date">4주일 전</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="" class="theme-thumb thumb-bd">
+                    <img src="./asset/images/ad5.jpg" alt="">
+                  </a>
+                  <a href="" class="theme-info">
+                    <em class="theme-category">레시피</em>
+                    <strong class="title">고구마전 간단하고 바삭하게 부치는 법</strong>
+                    <p class="desc">오늘의 메뉴 고구마전 명절에 전하면 빠질 수 없는 메뉴가 하나 있죠 바로 고구마전인데요 사실 에그얌이 가장 좋아하는 전이 고구마전이라 명절 음식을
+                      준비할 때 빼놓을 수 없답니다 고구마는 식이 섬유소가 풍부해 영양 간식으로 먹기에도 손색이 없는데요 단단한 밤고구마와 튀김가루를 이용해 바삭한 고구마전을 만들어봤어요 고구마는
+                      밥과의 궁합도 정말 좋은데요 고구마.</p>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">에그얌</span>
+                      </span>
+                      <span class="date">4주일 전</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="group-theme">
+              <div class="media-view-wrap">
+                <a href="">
+                  <div class="media-thumb thumb-bd">
+                    <img src="./asset/images/ad6.jpg" alt="">
+                    <i class="play"><span class="blind">재생</span></i>
+                    <span class="time">
+                      <em>5:33</em>
+                      <span class="blind">재생시간</span>
+                    </span>
+                  </div>
+                  <div class="media-info">
+                    <strong class="title">감자를 갈아 넣은 깻잎 물김치의 깊은 맛</strong>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">요리1번지</span>
+                      </span>
+                      <span class="date">3주일 전</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="media-thumb thumb-bd">
+                    <img src="./asset/images/ad6.jpg" alt="">
+                    <i class="play"><span class="blind">재생</span></i>
+                    <span class="time">
+                      <em>5:33</em>
+                      <span class="blind">재생시간</span>
+                    </span>
+                  </div>
+                  <div class="media-info">
+                    <strong class="title">감자를 갈아 넣은 깻잎 물김치의 깊은 맛</strong>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">요리1번지</span>
+                      </span>
+                      <span class="date">3주일 전</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="media-thumb thumb-bd">
+                    <img src="./asset/images/ad6.jpg" alt="">
+                    <i class="play"><span class="blind">재생</span></i>
+                    <span class="time">
+                      <em>5:33</em>
+                      <span class="blind">재생시간</span>
+                    </span>
+                  </div>
+                  <div class="media-info">
+                    <strong class="title">감자를 갈아 넣은 깻잎 물김치의 깊은 맛</strong>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">요리1번지</span>
+                      </span>
+                      <span class="date">3주일 전</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="group-theme">
+              <ul class="theme-list">
+                <li class="theme-item">
+                  <a href="" class="theme-thumb thumb-bd">
+                    <img src="./asset/images/ad5.jpg" alt="">
+                  </a>
+                  <a href="" class="theme-info">
+                    <em class="theme-category">레시피</em>
+                    <strong class="title">고구마전 간단하고 바삭하게 부치는 법</strong>
+                    <p class="desc">오늘의 메뉴 고구마전 명절에 전하면 빠질 수 없는 메뉴가 하나 있죠 바로 고구마전인데요 사실 에그얌이 가장 좋아하는 전이 고구마전이라 명절 음식을
+                      준비할 때 빼놓을 수 없답니다 고구마는 식이 섬유소가 풍부해 영양 간식으로 먹기에도 손색이 없는데요 단단한 밤고구마와 튀김가루를 이용해 바삭한 고구마전을 만들어봤어요 고구마는
+                      밥과의 궁합도 정말 좋은데요 고구마.</p>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">에그얌</span>
+                      </span>
+                      <span class="date">4주일 전</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="" class="theme-thumb thumb-bd">
+                    <img src="./asset/images/ad5.jpg" alt="">
+                  </a>
+                  <a href="" class="theme-info">
+                    <em class="theme-category">레시피</em>
+                    <strong class="title">고구마전 간단하고 바삭하게 부치는 법</strong>
+                    <p class="desc">오늘의 메뉴 고구마전 명절에 전하면 빠질 수 없는 메뉴가 하나 있죠 바로 고구마전인데요 사실 에그얌이 가장 좋아하는 전이 고구마전이라 명절 음식을
+                      준비할 때 빼놓을 수 없답니다 고구마는 식이 섬유소가 풍부해 영양 간식으로 먹기에도 손색이 없는데요 단단한 밤고구마와 튀김가루를 이용해 바삭한 고구마전을 만들어봤어요 고구마는
+                      밥과의 궁합도 정말 좋은데요 고구마.</p>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">에그얌</span>
+                      </span>
+                      <span class="date">4주일 전</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="" class="theme-thumb thumb-bd">
+                    <img src="./asset/images/ad5.jpg" alt="">
+                  </a>
+                  <a href="" class="theme-info">
+                    <em class="theme-category">레시피</em>
+                    <strong class="title">고구마전 간단하고 바삭하게 부치는 법</strong>
+                    <p class="desc">오늘의 메뉴 고구마전 명절에 전하면 빠질 수 없는 메뉴가 하나 있죠 바로 고구마전인데요 사실 에그얌이 가장 좋아하는 전이 고구마전이라 명절 음식을
+                      준비할 때 빼놓을 수 없답니다 고구마는 식이 섬유소가 풍부해 영양 간식으로 먹기에도 손색이 없는데요 단단한 밤고구마와 튀김가루를 이용해 바삭한 고구마전을 만들어봤어요 고구마는
+                      밥과의 궁합도 정말 좋은데요 고구마.</p>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">에그얌</span>
+                      </span>
+                      <span class="date">4주일 전</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="theme-item">
+                  <a href="" class="theme-thumb thumb-bd">
+                    <img src="./asset/images/ad5.jpg" alt="">
+                  </a>
+                  <a href="" class="theme-info">
+                    <em class="theme-category">레시피</em>
+                    <strong class="title">고구마전 간단하고 바삭하게 부치는 법</strong>
+                    <p class="desc">오늘의 메뉴 고구마전 명절에 전하면 빠질 수 없는 메뉴가 하나 있죠 바로 고구마전인데요 사실 에그얌이 가장 좋아하는 전이 고구마전이라 명절 음식을
+                      준비할 때 빼놓을 수 없답니다 고구마는 식이 섬유소가 풍부해 영양 간식으로 먹기에도 손색이 없는데요 단단한 밤고구마와 튀김가루를 이용해 바삭한 고구마전을 만들어봤어요 고구마는
+                      밥과의 궁합도 정말 좋은데요 고구마.</p>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">에그얌</span>
+                      </span>
+                      <span class="date">4주일 전</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="group-theme">
+              <h3 class="theme-title">
+                <a href="" class="title">마음까지 채우는 클릭</a>
+              </h3>
+              <div class="media-view-wrap type_flick">
+                <a href="">
+                  <div class="media-thumb thumb-bd">
+                    <img src="./asset/images/ad6.jpg" alt="">
+                    <em class="theme-badge">
+                      <span class="badge-inner">펀딩</span>
+                    </em>
+                  </div>
+                  <div class="media-info">
+                    <strong class="title">첨가물 ZERO! 재료 본연의 맛을 살린 유기농 퓨레</strong>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">농업회사법인 풀로윈</span>
+                      </span>
+                      <span class="dsc"><em class="theme-hl">131%</em> 달성</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="media-thumb thumb-bd">
+                    <img src="./asset/images/ad6.jpg" alt="">
+                    <em class="theme-badge">
+                      <span class="badge-inner">펀딩</span>
+                    </em>
+                  </div>
+                  <div class="media-info">
+                    <strong class="title">첨가물 ZERO! 재료 본연의 맛을 살린 유기농 퓨레</strong>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">농업회사법인 풀로윈</span>
+                      </span>
+                      <span class="dsc"><em class="theme-hl">131%</em> 달성</span>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="media-thumb thumb-bd">
+                    <img src="./asset/images/ad6.jpg" alt="">
+                    <em class="theme-badge">
+                      <span class="badge-inner">펀딩</span>
+                    </em>
+                  </div>
+                  <div class="media-info">
+                    <strong class="title">첨가물 ZERO! 재료 본연의 맛을 살린 유기농 퓨레</strong>
+                    <div class="source-box">
+                      <span class="source">
+                        <span class="source-inner">농업회사법인 풀로윈</span>
+                      </span>
+                      <span class="dsc"><em class="theme-hl">131%</em> 달성</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="btn-more-wrap">
+              <button class="btb-more">
+                <i class="ico-more"></i>
+                새로운 글 더보기
+              </button>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <!-- //left -->
+
+      <div class="column-right">
+        <section class="sc-login">
+          <h2 class="blind">로그인</h2>
+          <p class="login-msg">네이버를 더 연결하고 편리하게 이용하세요</p>
+          <a href="" class="link-login">
+            <i class="ico-naver"><span class="blind">네이버</span></i> 로그인
+          </a>
+          <div class="sub-area">
+            <a href="" class="link-id">아이디</a>
+            <a href="" class="link-find">비밀번호찾기</a>
+            <a href="" class="link-join">회원가입</a>
+          </div>
+        </section>
+        
+        <section class="sc-sidenews">
+          <h2 class="blind">사이드뉴스</h2>
+          <a href="" class="link-side">
+            <span class="badge">이슈</span>
+            <span class="news">코로나바이러스19 현황</span>
+          </a>
+          <div class="nav-area">
+            <a href="" role="button" class="btn-nav prev"><span class="blind">이전</span></a>
+            <a href="" role="button" class="btn-nav next"><span class="blind">다음</span></a>
+          </div>
+        </section>
+
+        <aside class="ad-box">
+          <a href="" class="thumb-bd">
+            <img src="./asset/images/ad2.jpg" alt="">
+          </a>
+        </aside>
+
+        <!-- 상품부분 만드세요! -->
+        <section class="sc-shop">
+          <div class="shop-header">
+            <h1><a href="" class="link-shop">트렌드쇼핑</a></h1>
+            <div class="shop-tab-list" role="tablist">
+              <a href="" role="tab" aria-selected="ture" class="tab-item active">상품</a>
+              <a href="" role="tab" aria-selected="false" class="tab-item">쇼핑몰</a>
+              <a href="" role="tab" aria-selected="false" class="tab-item">MEN</a>
+            </div>
+          </div>
+          <div class="shop-content">
+
+            <div class="group-mall">
+              <div class="mall-area">
+                <a href="" class="link-mall">쿠팡</a>
+                <span class="ls ls13"></span>
+                <a href="" class="link-mall"><strong>G마켓</strong></a>
+                <span class="ls ls13"></span>
+                <a href="" class="link-mall">옥션</a>
+                <span class="ls ls12"></span>
+                <a href="" class="link-mall">11번가</a>
+                <span class="ls ls13"></span>
+                <a href="" class="link-mall"><strong>SSG닷컴</strong></a><span class="ls ls12"></span>
+                <a href="" class="link-mall">티몬</a>
+              </div>
+              <div class="mall-area">
+                <a href="" class="link-mall"><strong>올리브영</strong></a>
+                <span class="ls ls11"></span>
+                <a href="" class="link-mall">위메프</a>
+                <span class="ls ls11"></span>
+                <a href="" class="link-mall"><strong>GS샵</strong></a>
+                <span class="ls ls10"></span>
+                <a href="" class="link-mall">CJ온스타일</a>
+                <span class="ls ls11"></span>
+                <a href="" class="link-mall">패션플러스</a>
+              </div>
+            </div>
+
+            <div class="group-products">
+              <div class="shop-control">
+                <span class="num-box">
+                  <em class="current"><span class="blind">현재</span>1</em>
+                  <span class="blind">전체</span> / 18
+                </span>
+                <div class="btn-box">
+                  <a href="" role="button" class="btn prev"><span class="blind">이전</span></a>
+                  <a href="" role="button" class="btn next"><span class="blind">다음</span></a>
+                </div>
+              </div>
+              <div class="products-area">
+                <ul class="product-list">
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product1.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                        <span>허리탄탄편안하게</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="page-area">
+                <span class="num-box">
+                  <em class="current"><span class="blind">현재</span>1</em><span class="blind">전체</span> / 18
+                </span>
+                <div class="btn-box">
+                  <a href="" role="button" class="btn prev"><span class="blind">이전</span></a>
+                  <a href="" role="button" class="btn next"><span class="blind">다음</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="group-shop-event">
+              <div class="title-area">
+                <strong>반갑다! 쇼핑뉴스</strong>
+                <div class="shop-control">
+                  <span class="num-box">
+                    <em class="current"><span class="blind">현재</span>1</em><span class="blind">전체</span> / 18
+                  </span>
+                  <div class="btn-box">
+                    <a href="" role="button" class="btn prev"><span class="blind">이전</span></a>
+                    <a href="" role="button" class="btn next"><span class="blind">다음</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="event-area">
+                <ul class="event-list">
+                  <li class="event-item">
+                    <a href="">
+                      <em>케이클럽</em>
+                      <span>UP TO~80% 배송비 0원!</span>
+                    </a>
+                  </li>
+                  <li class="event-item">
+                    <a href="">
+                      <em>케이클럽</em>
+                      <span>UP TO~80% 배송비 0원!</span>
+                    </a>
+                  </li>
+                  <li class="event-item">
+                    <a href="">
+                      <em>케이클럽</em>
+                      <span>UP TO~80% 배송비 0원!</span>
+                    </a>
+                  </li>
+                  <li class="event-item">
+                    <a href="">
+                      <em>케이클럽</em>
+                      <span>UP TO~80% 배송비 0원!</span>
+                    </a>
+                  </li>
+                  <li class="event-item">
+                    <a href="">
+                      <em>케이클럽</em>
+                      <span>UP TO~80% 배송비 0원!</span>
+                    </a>
+                  </li>
+                  <li class="event-item">
+                    <a href="">
+                      <em>케이클럽</em>
+                      <span>UP TO~80% 배송비 0원!</span>
+                    </a>
+                  </li>
+                  <li class="event-item">
+                    <a href="">
+                      <em>케이클럽</em>
+                      <span>UP TO~80% 배송비 0원!</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="group-plus">
+              <div class="shop-category" role="tablist">
+                <a href="" class="category category-fashion" role="tab" aria-selected="true">패션</a>
+                <a href="" class="category category-life" role="tab" aria-selected="false">라이프</a>
+                <a href="" class="category category-digital" role="tab" aria-selected="false">디지털&middot;레저</a>
+                <a href="" class="category category-beauty" role="tab" aria-selected="false">뷰티</a>
+              </div>
+              <div class="shop-control">
+                <span class="num-box">
+                  <em class="current"><span class="blind">현재</span>1</em><span class="blind">전체</span> / 18
+                </span>
+                <div class="btn-box">
+                  <a href="" role="button" class="btn prev"><span class="blind">이전</span></a>
+                  <a href="" role="button" class="btn next"><span class="blind">다음</span></a>
+                </div>
+              </div>
+              <div class="products-area">
+                <ul class="product-list">
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product2.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="product-item">
+                    <a href="">
+                      <div class="product-thumb thumb-bd">
+                        <img src="./asset/images/product2.jpg" alt="">
+                      </div>
+                      <div class="product-info">
+                        <em>바닥에서 잘때도</em>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="group-plusdeal">
+              <div class="title-area">
+                <strong>
+                  <a href="" class="link-logo">
+                    <span class="blind">원플딜</span>
+                  </a>원쁠딜 전 상품 무료배송!
+                </strong>
+                <div class="shop-control">
+                  <span class="num-box">
+                    <em class="current"><span class="blind">현재</span>1</em><span class="blind">전체</span> / 18
+                  </span>
+                  <div class="btn-box">
+                    <a href="" role="button" class="btn prev"><span class="blind">이전</span></a>
+                    <a href="" role="button" class="btn next"><span class="blind">다음</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="deal-area">
+                <ul class="deal-list">
+                  <li class="deal-item">
+                    <a href="">
+                      <div class="deal-thumb">
+                        <div class="thumb-box thumb-bd">
+                          <img src="./asset/images/product3.jpg" alt="">
+                          <i class="ico-one-plus">
+                            <span class="blind">ONE PLUS ONE</span>
+                          </i>
+                        </div>
+                        <div class="thumb-box thumb-bd">
+                          <img src="./asset/images/product4.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="deal-info">
+                        <strong class="title">베베숲 시그니처 위드블루 70매 캡 10팩+10팩</strong>
+                        <div class="price-wrap">
+                          <em class="discount">
+                            <span class="blind">할인율</span>
+                            27%
+                          </em>
+                          <span class="price">35,200원</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="deal-item">
+                    <a href="">
+                      <div class="deal-thumb">
+                        <div class="thumb-box thumb-bd">
+                          <img src="./asset/images/product3.jpg" alt="">
+                          <i class="ico-one-plus">
+                            <span class="blind">ONE PLUS ONE</span>
+                          </i>
+                        </div>
+                        <div class="thumb-box thumb-bd">
+                          <img src="./asset/images/product4.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="deal-info">
+                        <strong class="title">베베숲 시그니처 위드블루 70매 캡 10팩+10팩</strong>
+                        <div class="price-wrap">
+                          <em class="discount">
+                            <span class="blind">할인율</span>
+                            27%
+                          </em>
+                          <span class="price">35,200원</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="deal-item">
+                    <a href="">
+                      <div class="deal-thumb">
+                        <div class="thumb-box thumb-bd">
+                          <img src="./asset/images/product3.jpg" alt="">
+                          <i class="ico-one-plus">
+                            <span class="blind">ONE PLUS ONE</span>
+                          </i>
+                        </div>
+                        <div class="thumb-box thumb-bd">
+                          <img src="./asset/images/product4.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="deal-info">
+                        <strong class="title">베베숲 시그니처 위드블루 70매 캡 10팩+10팩</strong>
+                        <div class="price-wrap">
+                          <em class="discount">
+                            <span class="blind">할인율</span>
+                            27%
+                          </em>
+                          <span class="price">35,200원</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+      <!-- //right -->
+    </main>
+    <footer class="footer">
+      <div class="inner">
+        <div class="banner-area">
+          <a href="" class="link-banner">
+            <div class="banner-thumb thumb-bd">
+              <img src="./asset/images/footer-banner.jpg" alt="">
+            </div>
+            <div class="banner-info">
+              <em>개인정보보호위원회</em>
+              <strong>내정보 지킴이 캠페인</strong>
+              <p>내 삶을 지키는<br>개인정보보호 프라이버시 온</p>
+            </div>
+          </a>
+          <a href="" class="link-banner">
+            <div class="banner-thumb thumb-bd">
+              <img src="./asset/images/footer-banner.jpg" alt="">
+            </div>
+            <div class="banner-info">
+              <em>개인정보보호위원회</em>
+              <strong>내정보 지킴이 캠페인</strong>
+              <p>내 삶을 지키는<br>개인정보보호 프라이버시 온</p>
+            </div>
+          </a>
+          <a href="" class="link-banner">
+            <div class="banner-thumb thumb-bd">
+              <img src="./asset/images/footer-banner.jpg" alt="">
+            </div>
+            <div class="banner-info">
+              <em>개인정보보호위원회</em>
+              <strong>내정보 지킴이 캠페인</strong>
+              <p>내 삶을 지키는<br>개인정보보호 프라이버시 온</p>
+            </div>
+          </a>
+        </div>
+        <div class="notice-area">
+          <div class="notice-wrap">
+            <h3><a href="">공지사항</a></h3>
+            <a href="" class="notice-msg">네이버 ‘개인정보 처리방침’ 변경에 대한 안내 말씀드립니다.</a>
+          </div>
+          <a href="" class="link-notice-all">서비스 전체보기</a>
+        </div>
+        <div class="aside-area">
+          <div class="partners-box-wrap">
+            <div class="partners-box">
+              <h3>Creators</h3>
+              <a href="">크리에이터</a>
+              <a href="">스몰비즈니스</a>
+            </div>
+            <div class="partners-box">
+              <h3>Partners</h3>  
+              <a href="">SME 풀케어 시스템</a>
+              <a href="">비즈니스 · 광고</a>
+              <a href="">스토어 개설</a>
+              <a href="">지역업체 등록</a>
+              <a href="">엑스퍼트 등록</a>
+            </div>
+            <div class="partners-box">
+              <h3>Developers</h3>
+              <a href="">네이버 개발자 센터</a>
+              <a href="">오픈 API</a>
+              <a href="">오픈소스</a>
+              <a href="">네이버 D2</a>
+              <a href="">네이버 D2SF</a>
+              <a href="">네이버 랩스</a>
+            </div>
+          </div>
+          <div class="service-wrap">
+            <div class="service-box">
+              <div class="service-info">
+                <strong>웨일브라우저</strong>
+                <a href="">다운받기</a>
+              </div>
+              <a href="" class="service-logo">
+                <img src="./asset/images/footer-logo.png" alt="">
+              </a>
+            </div>
+            <div class="service-box">
+              <div class="service-info">
+                <strong>프로젝트 꽃</strong>
+                <a href="">다운받기</a>
+              </div>
+              <a href="" class="service-logo">
+                <img src="./asset/images/footer-logo.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="corp-area">
+          <h3 class="blind">네이버 정책 및 약관</h3>
+          <ul class="corp-list">
+            <li class="corp-item"><a href="">회사소개</a></li>
+            <li class="corp-item"><a href="">인재채용</a></li>
+            <li class="corp-item"><a href="">제휴제안</a></li>
+            <li class="corp-item"><a href="">이용약관</a></li>
+            <li class="corp-item"><a href=""><strong>개인정보처리방침</strong></a></li>
+            <li class="corp-item"><a href="">청소년보호정책</a></li>
+            <li class="corp-item"><a href="">네이버 정책</a></li>
+            <li class="corp-item"><a href="">고객센터</a></li>
+          </ul>
+          <address>
+            <a href="" class="link-addr">ⓒ NAVER Corp.</a>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
